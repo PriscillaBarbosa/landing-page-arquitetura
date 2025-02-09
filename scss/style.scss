@@ -15,8 +15,18 @@ body {
 
 .hero {
     height: 100vh;
-    background-image: url('../images/door.jpg');
+    background: url('../images/casaHero.png') no-repeat center center;
     background-size: cover;
+    color: $light-color;
+    position: relative; // Adicionado para permitir posicionamento absoluto dentro da hero
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 section {
@@ -37,6 +47,12 @@ section {
 .card {
     box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
     border: nome;
+}
+
+.card-img-top {
+    width: 100%; // Garante que a imagem ocupe toda a largura do card
+    height: 200px; // Define uma altura consistente
+    object-fit: cover; // Garante que a imagem mantenha a proporção dentro do tamanho definido
 }
 
 .btn-primary {
