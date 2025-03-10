@@ -14,11 +14,11 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    height: 150vh;
     background: url('../images/casaHero.png') no-repeat center center;
     background-size: cover;
     color: $light-color;
-    position: relative; // Adicionado para permitir posicionamento absoluto dentro da hero
+    position: relative; 
 }
 
 .text-overlay {
@@ -40,19 +40,19 @@ section {
 }
 
 .col-md-4 {
-    width: 30%;
-    margin: 1%;
+    width: 90%;
 }
 
 .card {
     box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
-    border: nome;
+    border: none;
 }
 
-.card-img-top {
-  max-width: 100%;
-  max-height: 140px;
-}
+.card-img, .card-img-bottom, .card-img-top {
+    flex-shrink: 0;
+    width: 100%;
+    height: 140px;
+  }
 
 .btn-primary {
     background-color: #007bff;
@@ -66,4 +66,11 @@ footer {
 
 .mt-3 {
     margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .col-md-4 {
+        flex: 0 0 25%;
+        max-width: 100%;
+    }
 }
