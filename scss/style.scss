@@ -14,11 +14,14 @@ body {
 }
 
 .hero {
-    height: 150vh;
     background: url('../images/casaHero.png') no-repeat center center;
     background-size: cover;
     color: $light-color;
     position: relative; 
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
 }
 
 .text-overlay {
@@ -30,17 +33,17 @@ body {
 }
 
 section {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: nowrap;
 }
 
 .col-md-4 {
-    width: 90%;
+    width: 100%;
 }
 
 .card {
